@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // navbar laden + active-Klasse setzen
 function loadNavbar() {
-    fetch('navbar.html')
+    fetch('/Bewerbung/navbar.html')
       .then(res => res.text())
       .then(data => {
         const placeholder = document.getElementById('navbar-placeholder');
