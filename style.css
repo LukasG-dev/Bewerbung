@@ -13,8 +13,6 @@ button {
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    /*width: 600px;
-    height: 60px;*/
     font-family:'Courier New', courier, monospace, sans-serif;
 }
 button:hover {
@@ -26,6 +24,7 @@ h1 {
     text-align: center;
     color:Beige
 }
+
 /* Navigationsleiste */
 /* Grundlegendes Styling für die Navigation */
 .navbar {
@@ -39,7 +38,7 @@ h1 {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start; /* Menü ganz nach rechts */
+    justify-content: flex-start;
     gap: 20px;
 }
 
@@ -61,15 +60,15 @@ h1 {
     background-color: rgba(32, 37, 32, 0.288);
 }
 .dropdown {
-    position: relative; /* Wichtig für die richtige Positionierung */
+    position: relative; 
 }
 
 /* Dropdown-Menü */
 .dropdown-content {
     display: none;
     position: absolute;
-    left: 0; /* Rechtsbündig */
-    top: 100%; /* Direkt unter das Hauptmenü */
+    left: 0; 
+    top: 100%; 
     background-color: rgba(0, 0, 0, 0.8);
     min-width: 200px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -84,14 +83,13 @@ h1 {
     display: block;
     text-align: left;
     border-radius: 10px;
-    white-space: nowrap; /* Verhindert Umbrüche */
+    white-space: nowrap; 
 }
 
 .dropdown-content a:hover {
     background-color: rgba(7, 84, 7, 0.615);
 }
 
-/* Dropdown anzeigen, wenn Maus darüberfährt */
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -104,7 +102,7 @@ h1 {
     width: 1300px;
     height: 750px;
     background-color: #222;
-    display: inline-block; /* Wichtig, um es nebeneinander zu positionieren */
+    display: inline-block; 
 }
 
 #instructions {
@@ -112,10 +110,10 @@ h1 {
     padding: 10px;
     width: 300px;
     background-color: #222;
-    height: 730px; /* gleiche Höhe wie das Spiel */
-    overflow-y: auto; /* Scrollen falls der Inhalt größer wird */
-    display: inline-block; /* Damit es nebeneinander angezeigt wird */
-    vertical-align: top; /* Um es oben auszurichten */
+    height: 730px; 
+    overflow-y: auto; 
+    display: inline-block; 
+    vertical-align: top; 
 }
 
 

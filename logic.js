@@ -53,7 +53,7 @@ function loadNavbar() {
   window.addEventListener('DOMContentLoaded', () => {
     loadNavbar();
   
-    // Optional: PDF anzeigen, wenn URL-Parameter vorhanden ist
+    //PDF anzeigen, wenn URL-Parameter vorhanden ist
     const params = new URLSearchParams(window.location.search);
     const pdfId = params.get('pdf');
     if (pdfId && typeof openPDF === 'function') {
