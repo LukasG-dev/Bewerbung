@@ -3,143 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bewerbungsunterlagen</title>
+    <title>Lukas Grebner – IT & Psychology Student</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="logic.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="logic.js" defer></script>
   </head>
   <body>
     <div id="navbar-placeholder"></div>
 
-    <h1>Willkommen auf meiner Bewerbungswebsite</h1>
-    <!-- Einleitung & Projektbeschreibung -->
-    <div class="bewerbung-container">
-      <h2>Über mich</h2>
-      <p>
-        Mein Name ist Lukas und ich beginne am 27. September mein Studium in IT
-        & Computing mit Zweitfach Psychologie. Auf dieser Seite finden Sie alle
-        relevanten Informationen zu meinem bisherigen Werdegang, meinen
-        Projekten (auch Work in Progress) sowie meiner Motivation, mich in der
-        IT weiterzuentwickeln. Aktuell bin ich auf der Suche nach einer
-        Werkstudentenstelle, um neben dem Studium praktische Erfahrungen zu
-        sammeln und meine Kenntnisse in realen Projekten anzuwenden.
-      </p>
+    <header class="hero">
+      <div class="hero-left"></div>
 
-      <h3>Aktuelle Projekte</h3>
-      <ul>
-        <li>
-          <strong>Excel-Vorverarbeitung für Carrier Preislisten:</strong>
-          In diesem Projekt habe ich ein Programm zur Vorbereitung von
-          Excel-Workbooks verschiedener Telefonie-Carrier entwickelt. Die Daten
-          wurden in ein <em>Array of Arrays</em> umgewandelt, manipuliert und in
-          einer vorgefertigten Vorlage gespeichert. Zum Einsatz kam dabei die
-          Bibliothek <code>Sheet.js</code>.
-        </li>
-        <li>
-          <strong>Automatisierte Kundenbestellungen:</strong>
-          In einem weiteren Projekt habe ich mit <code>Axios</code> und
-          <code>Sheet.js</code> gearbeitet, um aus Excel-Listen automatisiert
-          Bestellungen per POST- und GET-API-Anfragen zu generieren.
-          Abschließend konnte ein Excel-Workbook mit allen erfolgreich
-          abgeschlossenen Portierungsaufträgen inklusive Zugangsdaten erstellt
-          werden.
-        </li>
-        <li>
-          <strong>Private Projekte:</strong>
-          Meine privaten Projekte finden Sie hier unter dem Menüpunkt
-          <em>Projekte</em>. An diesen arbeite ich in meiner Freizeit, um meine
-          Fähigkeiten gezielt weiterzuentwickeln. Dabei nutze ich auch die
-          Unterstützung von ChatGPT – das möchte ich an dieser Stelle
-          transparent erwähnen, um Missverständnissen vorzubeugen.
-        </li>
-      </ul>
+      <div class="hero-center">
+        <div class="video-wrapper">
+          <video autoplay muted loop playsinline class="hero-video">
+            <source src="vid.mp4" type="video/mp4" />
+            Dein Browser unterstützt keine Videos.
+          </video>
+          <div class="video-filter"></div>
+          <div class="hero-overlay"></div>
+        </div>
 
-      <h3>Wachstum & Lernen</h3>
-      <p>
-        Auch wenn meine Schulnoten in Mathematik nicht immer meine Begeisterung
-        für Technik widerspiegelten, arbeite ich kontinuierlich daran, meine
-        Fähigkeiten – besonders im logischen Denken und Problemlösen – zu
-        verbessern.
-      </p>
+        <div class="hero-content">
+          <h1>Hey, ich bin Lukas Grebner.</h1>
+          <p>
+            Werkstudent im Bereich <strong>IT & Computing</strong><br />
+            mit psychologischem Blick auf Technik und Mensch.
+          </p>
+          <a href="#projekte" class="btn-primary">Projekte entdecken</a>
+        </div>
+      </div>
 
-      <h3>Was mich auszeichnet</h3>
-      <p>
-        Besonders zeichnen mich meine <strong>Ausdauer</strong>, meine
-        <strong>reflektierte Arbeitsweise</strong> und mein
-        <strong>Antrieb</strong> aus, jeden Tag ein Stück besser zu werden.
-      </p>
-      <h3>Meine Kontaktdaten</h3>
+      <div class="hero-right"></div>
+    </header>
 
-      <p>
-        Mobile: 0152 08547828<br />
-        E-Mail: grebner1998@gmail.com<br />
-        GitHub:
-        <a
-          href="https://github.com/LukasG-dev"
-          target="_blank"
-          style="color: aqua"
-          >https://github.com/LukasG-dev</a
-        >
-        <br />
-        LinkedIn:
-        <a
-          href="https://www.linkedin.com/in/lukas-grebner-85b6251b4"
-          target="_blank"
-          style="color: aqua"
-          >www.linkedin.com/in/lukas-grebner</a
-        >
-      </p>
-      <h3>Viel Spaß beim Stöbern!</h3>
-    </div>
-    <style>
-      .bewerbung-container {
-        background-color: rgba(9, 9, 9, 0.51);
-        color: Beige;
-        padding: 30px;
-        max-width: 900px;
-        margin: 40px auto;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        opacity: 1 !important;
-        filter: none !important;
-      }
+    <main class="bewerbung-container">
+      <section>
+        <h2>Was mich auszeichnet</h2>
+        <ul class="highlight-list">
+          <li>🌐 IT-Student mit praktischen API- und Web-Erfahrungen</li>
+          <li>
+            🧠 Psychologie als Zweitfach – Fokus auf Mensch-Maschine-Verständnis
+          </li>
+          <li>🚀 Lernbereit, zielorientiert, lösungsfokussiert</li>
+          <li>
+            💡 Starke Eigeninitiative durch private Projekte & autodidaktisches
+            Lernen
+          </li>
+        </ul>
+      </section>
 
-      .bewerbung-container h2,
-      .bewerbung-container h3 {
-        color: Beige;
-        margin-top: 30px;
-      }
+      <section>
+        <h2>Technologie & Tools</h2>
+        <ul class="tech-list">
+          <li><strong>Sprachen:</strong> JavaScript, C#</li>
+          <li><strong>Technogien:</strong> HTML, CSS, JSON</li>
+          <li><strong>Frameworks:</strong> Axios, Sheet.js</li>
+          <li>
+            <strong>Tools:</strong> GitHub, GitLab, VS Code, Visual Studio,
+            <br />
+            KIX, OpenOffice Programme
+          </li>
+        </ul>
+      </section>
 
-      .bewerbung-container p {
-        font-size: 16px;
-        margin-bottom: 20px;
-      }
+      <section id="projekte">
+        <h2>Projekte (auch Work in Progress)</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>📊 Excel-Preprocessing für Carrier</h3>
+            <p>
+              Automatisiertes Umwandeln und Vorbereiten von Telefonie-Preisdaten
+              mit <code>Sheet.js</code>
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>🔄 API-Bestellautomatisierung</h3>
+            <p>
+              POST- & GET-Anfragen aus Excel, protokollierte Rückmeldungen,
+              Datenexporte
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>🛠️ Private Tools & Lernprojekte</h3>
+            <p>
+              D&D-Website, Notenrechner, Bewerbungsseite, Restaurant Website
+            </p>
+          </div>
+        </div>
+      </section>
 
-      .bewerbung-container ul {
-        margin-left: 20px;
-        padding-left: 15px;
-      }
-
-      .bewerbung-container li {
-        margin-bottom: 15px;
-      }
-
-      .bewerbung-container code {
-        background-color: #6264694b;
-        padding: 2px 5px;
-        border-radius: 4px;
-        font-family: Consolas, monospace;
-        font-size: 0.95em;
-      }
-
-      .bewerbung-container strong {
-        font-weight: bold;
-      }
-
-      .bewerbung-container em {
-        font-style: italic;
-      }
-    </style>
+      <section>
+        <h2>Kontakt</h2>
+        <p>
+          Du möchtest mit mir sprechen oder mehr erfahren?<br />
+          📞 0152 08547828 · ✉️
+          <a href="mailto:grebner1998@gmail.com">grebner1998@gmail.com</a><br />
+          💻
+          <a href="https://github.com/LukasG-dev" target="_blank">GitHub</a> ·
+          💼
+          <a
+            href="https://www.linkedin.com/in/lukas-grebner-85b6251b4"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </p>
+      </section>
+    </main>
   </body>
 </html>
