@@ -1,0 +1,19 @@
+/* Responsives Verhalten */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .placeholder {
+    display: none;
+  }
+
+  .content-box {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .btn-primary {
+    display: none;
+  }
+}

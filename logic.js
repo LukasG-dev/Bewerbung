@@ -24,7 +24,7 @@ function openPDF(id) {
  * Lädt die Navigationsleiste und initialisiert den Darkmode-Toggle
  */
 function loadNavbar() {
-  fetch("navbar.html")
+  fetch("/navbar.html")
     .then((res) => res.text())
     .then((data) => {
       const placeholder = document.getElementById("navbar-placeholder");
@@ -72,21 +72,57 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Time-Controll Video content
-document.addEventListener("DOMContentLoaded", () => {
-  const video = document.querySelector(".hero-video");
+// carusellfunction initFancyCarousel() {
+function init3DCarousel() {
+  const ring = document.querySelector(".carousel-ring");
+  const cards = Array.from(ring.children);
+  const angleStep = 360 / cards.length;
+  let currentIndex = 0;
+  let autoRotateInterval;
+  const rotationSpeed = 3000; // alle 4 Sekunden
 
-  if (video) {
-    video.addEventListener("loadedmetadata", () => {
-      const loopEnd = video.duration * 0.2; // 10% des Videos
+  cards.forEach((card, index) => {
+    const angle = angleStep * index;
+    card.style.transform = `rotateY(${angle}deg) translateZ(240px)`; // gleichmäßig verteilt
+  });
 
-      // Überwache die Zeit
-      video.addEventListener("timeupdate", () => {
-        if (video.currentTime >= loopEnd) {
-          video.currentTime = 0;
-          video.play(); // optional, damit es weiterläuft
-        }
-      });
-    });
+  function rotateCarousel() {
+    const angle = currentIndex * -angleStep;
+    ring.style.transform = `rotateY(${angle}deg)`;
   }
+
+  document.querySelector(".carousel-btn.left").addEventListener("click", () => {
+    currentIndex--;
+    rotateCarousel();
+  });
+
+  document
+    .querySelector(".carousel-btn.right")
+    .addEventListener("click", () => {
+      currentIndex++;
+      rotateCarousel();
+    });
+
+  rotateCarousel(); // Initial
+  autoRotateInterval = setInterval(() => {
+    currentIndex++;
+    rotateCarousel();
+  }, rotationSpeed);
+
+  // Hover-Pause
+  const carousel = document.querySelector(".carousel-viewport");
+  carousel.addEventListener("mouseenter", () =>
+    clearInterval(autoRotateInterval)
+  );
+  carousel.addEventListener("mouseleave", () => {
+    autoRotateInterval = setInterval(() => {
+      currentIndex++;
+      rotateCarousel();
+    }, rotationSpeed);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadNavbar(); // falls du deine Navigation lädst
+  init3DCarousel();
 });

@@ -1,0 +1,50 @@
+/* placeholder */
+/* === Sichtbare Platzhalterboxen === */
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #0a3a5f;
+  border: 1px dashed rgba(10, 58, 95, 0.3);
+  background-color: rgba(10, 58, 95, 0.05);
+  background-color: transparent;
+}
+
+/* === Farbliche Unterscheidung pro Platzhalter === */
+.pl-1-L {
+  background-color: #e3f2fd;
+}
+.pl-1-R {
+  background-color: #bbdefb;
+}
+
+.pl-2-L {
+  background-color: #c8e6c9;
+}
+.pl-2-R {
+  background-color: #a5d6a7;
+}
+
+.pl-3-L {
+  background-color: #fff9c4;
+}
+.pl-3-R {
+  background-color: #fff59d;
+}
+
+.pl-4-L {
+  background-color: #ffe0b2;
+}
+.pl-4-R {
+  background-color: #ffcc80;
+}
+
+.pl-5-L {
+  background-color: #f8bbd0;
+}
+.pl-5-R {
+  background-color: #f48fb1;
+}

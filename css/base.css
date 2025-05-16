@@ -1,0 +1,138 @@
+/* === Grundstil === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #bfcadd;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+main {
+  margin-top: 60px; /* identisch zur Navbar-Höhe */
+}
+h2 {
+  font-size: 2rem;
+  color: #0a3a5f;
+  margin-bottom: 20px;
+}
+
+p,
+li {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+/* === Dark Mode Button === */
+#toggle-darkmode {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 8px;
+  transition: color 0.3s ease;
+}
+/* === Code === */
+code {
+  background-color: #edf2f7;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* === Links === */
+a {
+  color: #0a3a5f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Grid-Struktur === */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 800px) 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.content-box {
+  background-color: rgba(255, 255, 255, 0.144);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Hero-Bereich === */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #0a3a5f;
+  padding: 12px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* === Listen === */
+.highlight-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.highlight-list li {
+  padding-left: 1.5em;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.highlight-list li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+}
+
+/* === Technologien-Liste === */
+.tech-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tech-list li {
+  margin-bottom: 10px;
+  padding-left: 1em;
+  position: relative;
+}

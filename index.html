@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lukas Grebner – IT & Psychology Student</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
       rel="stylesheet"
@@ -14,104 +14,147 @@
   <body>
     <div id="navbar-placeholder"></div>
 
-    <header class="hero">
-      <div class="hero-left"></div>
-
-      <div class="hero-center">
-        <div class="video-wrapper">
-          <video autoplay muted loop playsinline class="hero-video">
-            <source src="vid.mp4" type="video/mp4" />
-            Dein Browser unterstützt keine Videos.
-          </video>
-          <div class="video-filter"></div>
-          <div class="hero-overlay"></div>
-        </div>
-
-        <div class="hero-content">
-          <h1>Hey, ich bin Lukas Grebner.</h1>
+    <main class="grid-container">
+      <!-- Zeile 1 -->
+      <div class="placeholder pl-1-L"></div>
+      <div class="content-box">
+        <section class="hero-content">
+          <h1><span class="typed-text">Hallo, ich bin Lukas Grebner.</span></h1>
           <p>
-            Werkstudent im Bereich <strong>IT & Computing</strong><br />
-            mit psychologischem Blick auf Technik und Mensch.
+            Künftiger Student im Bereich <strong>IT & Computing</strong><br />
+            mit Zweitfach <strong>Psychologie</strong> <br />
+            für Intuition in der Anwendung!
           </p>
           <a href="#projekte" class="btn-primary">Projekte entdecken</a>
-        </div>
+        </section>
+      </div>
+      <div class="placeholder pl-1-R"></div>
+
+      <!-- Zeile 2 -->
+      <div class="placeholder pl-2-L"></div>
+      <div class="content-box">
+        <section>
+          <h2>Was mich auszeichnet</h2>
+          <ul class="highlight-list">
+            <li>
+              🌐 Künftiger IT-Student mit praktischen API- und Web-Erfahrungen
+            </li>
+            <li>
+              🧠 Psychologie als Zweitfach – Fokus auf
+              Mensch-Maschine-Verständnis
+            </li>
+            <li>🚀 Lernbereit, zielorientiert, lösungsfokussiert</li>
+            <li>
+              💡 Starke Eigeninitiative durch private Projekte &
+              autodidaktisches Lernen
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="placeholder pl-2-R"></div>
+
+      <!-- Zeile 3 -->
+      <div class="placeholder pl-3-L"></div>
+      <div class="content-box">
+        <section>
+          <h2>Technologie & Tools</h2>
+          <ul class="tech-list">
+            <li><strong>Sprachen:</strong> JavaScript, C#</li>
+            <li><strong>Technologien:</strong> HTML, CSS, JSON</li>
+            <li><strong>Frameworks:</strong> Axios, Sheet.js</li>
+            <li>
+              <strong>Tools:</strong> GitHub, GitLab, VS Code, Visual Studio,
+              KIX, OpenOffice
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="placeholder pl-3-R"></div>
+
+      <!-- Zeile 4 -->
+      <div class="placeholder pl-4-L"></div>
+      <div class="content-box">
+        <section id="projekte">
+          <h2>Projekte (auch Work in Progress)</h2>
+          <div class="carousel-wrapper">
+            <button class="carousel-btn left">◀</button>
+            <div class="carousel-viewport">
+              <div class="carousel-ring">
+                <div class="project-card">
+                  <div class="icon">🛠️</div>
+                  <h3>Bestellungen per Excel Liste</h3>
+                  <p>JS · API · Automatisierung</p>
+                </div>
+                <div class="project-card">
+                  <div class="icon">🛠️</div>
+                  <h3>Vorbereitung Carrier Preislisten</h3>
+                  <p>JS · Automatisierung</p>
+                </div>
+                <div class="project-card">
+                  <div class="icon">🌐</div>
+                  <h3>
+                    Bewerbungsseite <br />
+                    (work in Progress)
+                  </h3>
+                  <p>HTML · CSS · Responsive</p>
+                </div>
+                <div class="project-card">
+                  <div class="icon">🍽️</div>
+                  <h3>
+                    Restaurant & Reservirung <br />
+                    (work in Progress)
+                  </h3>
+                  <p>Fullstack · .NET · DB</p>
+                </div>
+                <div class="project-card">
+                  <div class="icon">🍽️</div>
+                  <h3>
+                    Notenrechner <br />
+                    (work in Progress)
+                  </h3>
+                  <p>JavaScript</p>
+                </div>
+                <div class="project-card">
+                  <div class="icon">🐉</div>
+                  <h3>D&D Website</h3>
+                  <p>DM-Tool · UI · JSON</p>
+                </div>
+                <div class="project-card">
+                  <div class="icon">🚀</div>
+                  <h3>Raketen Spiel</h3>
+                  <p>DM-Tool · UI · JSON</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn right">▶</button>
+          </div>
+        </section>
       </div>
 
-      <div class="hero-right"></div>
-    </header>
+      <div class="placeholder pl-4-R"></div>
 
-    <main class="bewerbung-container">
-      <section>
-        <h2>Was mich auszeichnet</h2>
-        <ul class="highlight-list">
-          <li>🌐 IT-Student mit praktischen API- und Web-Erfahrungen</li>
-          <li>
-            🧠 Psychologie als Zweitfach – Fokus auf Mensch-Maschine-Verständnis
-          </li>
-          <li>🚀 Lernbereit, zielorientiert, lösungsfokussiert</li>
-          <li>
-            💡 Starke Eigeninitiative durch private Projekte & autodidaktisches
-            Lernen
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Technologie & Tools</h2>
-        <ul class="tech-list">
-          <li><strong>Sprachen:</strong> JavaScript, C#</li>
-          <li><strong>Technogien:</strong> HTML, CSS, JSON</li>
-          <li><strong>Frameworks:</strong> Axios, Sheet.js</li>
-          <li>
-            <strong>Tools:</strong> GitHub, GitLab, VS Code, Visual Studio,
-            <br />
-            KIX, OpenOffice Programme
-          </li>
-        </ul>
-      </section>
-
-      <section id="projekte">
-        <h2>Projekte (auch Work in Progress)</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <h3>📊 Excel-Preprocessing für Carrier</h3>
-            <p>
-              Automatisiertes Umwandeln und Vorbereiten von Telefonie-Preisdaten
-              mit <code>Sheet.js</code>
-            </p>
-          </div>
-          <div class="project-card">
-            <h3>🔄 API-Bestellautomatisierung</h3>
-            <p>
-              POST- & GET-Anfragen aus Excel, protokollierte Rückmeldungen,
-              Datenexporte
-            </p>
-          </div>
-          <div class="project-card">
-            <h3>🛠️ Private Tools & Lernprojekte</h3>
-            <p>
-              D&D-Website, Notenrechner, Bewerbungsseite, Restaurant Website
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Kontakt</h2>
-        <p>
-          Du möchtest mit mir sprechen oder mehr erfahren?<br />
-          📞 0152 08547828 · ✉️
-          <a href="mailto:grebner1998@gmail.com">grebner1998@gmail.com</a><br />
-          💻
-          <a href="https://github.com/LukasG-dev" target="_blank">GitHub</a> ·
-          💼
-          <a
-            href="https://www.linkedin.com/in/lukas-grebner-85b6251b4"
-            target="_blank"
-            >LinkedIn</a
-          >
-        </p>
-      </section>
+      <!-- Zeile 5 -->
+      <div class="placeholder pl-5-L"></div>
+      <div class="content-box">
+        <section>
+          <h2>Kontakt</h2>
+          <p>
+            Du möchtest mit mir sprechen oder mehr erfahren?<br />
+            📞 0152 08547828 · ✉️
+            <a href="mailto:grebner1998@gmail.com">grebner1998@gmail.com</a
+            ><br />
+            💻
+            <a href="https://github.com/LukasG-dev" target="_blank">GitHub</a> ·
+            💼
+            <a
+              href="https://www.linkedin.com/in/lukas-grebner-85b6251b4"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </section>
+      </div>
+      <div class="placeholder pl-5-R"></div>
     </main>
   </body>
 </html>

@@ -1,0 +1,62 @@
+/* === Dark mode === */
+body.dark .project-card {
+  background-color: #223044;
+  color: #e2e8f0;
+}
+
+body.dark .project-card h3,
+body.dark .project-card p {
+  color: white;
+}
+
+body.dark .project-card:hover {
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .btn-primary {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+body.dark .btn-primary:hover {
+  background-color: #334155;
+}
+
+body.dark .hero-content h1,
+body.dark .hero-content p {
+  color: white;
+}
+
+body.dark {
+  background-color: #111827;
+  color: #f1f5f9;
+}
+
+body.dark h2 {
+  color: white;
+}
+body.dark #toggle-darkmode {
+  color: #38bdf8;
+}
+body.dark code {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+body.dark a {
+  color: #38bdf8;
+}
+
+/* darkmode for navbar */
+
+body.dark .navbar {
+  background-color: #0f172a;
+}
+
+body.dark .dropdown-content {
+  background-color: #1e293b;
+}
+
+body.dark .dropdown-content a:hover {
+  background-color: #334155;
+}

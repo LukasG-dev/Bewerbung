@@ -1,0 +1,37 @@
+/* === Tipp-Effekt === */
+.typed-text {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  border-right: 2px solid #000;
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+  font-family: "Inter", sans-serif;
+}
+.typed-text {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #000;
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
