@@ -24,7 +24,7 @@ function openPDF(id) {
  * Lädt die Navigationsleiste und initialisiert den Darkmode-Toggle
  */
 function loadNavbar() {
-  fetch("navbar.html")
+  fetch("/Bewerbung/navbar.html")
     .then((res) => res.text())
     .then((data) => {
       const placeholder = document.getElementById("navbar-placeholder");
