@@ -24,7 +24,7 @@ function openPDF(id) {
  * Lädt die Navigationsleiste und initialisiert den Darkmode-Toggle
  */
 function loadNavbar() {
-  fetch("/Bewerbung/navbar.html")
+  fetch("/navbar.html")
     .then((res) => res.text())
     .then((data) => {
       const placeholder = document.getElementById("navbar-placeholder");
@@ -126,3 +126,18 @@ document.addEventListener("DOMContentLoaded", () => {
   loadNavbar(); // falls du deine Navigation lädst
   init3DCarousel();
 });
+
+// Document page
+function loadPDF() {
+  const selected = document.getElementById("docSelect").value;
+  const viewer = document.getElementById("viewer-container");
+
+  if (selected) {
+    viewer.src = selected;
+    viewer.style.display = "block";
+    document.getElementById("openExternal").href = selected;
+  } else {
+    viewer.style.display = "none";
+    document.getElementById("openExternal").href = "#";
+  }
+}

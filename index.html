@@ -21,7 +21,8 @@
         <section class="hero-content">
           <h1><span class="typed-text">Hallo, ich bin Lukas Grebner.</span></h1>
           <p>
-            Künftiger Student im Bereich <strong>IT & Computing</strong><br />
+            Ab dem 27. September Student im Bereich
+            <strong>IT & Computing</strong><br />
             mit Zweitfach <strong>Psychologie</strong> <br />
             für Intuition in der Anwendung!
           </p>
@@ -72,7 +73,16 @@
       <div class="placeholder pl-3-R"></div>
 
       <!-- Zeile 4 -->
-      <div class="placeholder pl-4-L"></div>
+      <!-- Linker Platzhalter bleibt frei -->
+      <div class="placeholder pl-4-L">
+        <p>
+          Beim einem klick auf die Einzelne Projekt Karte wirst du zu dem
+          Jeweiligen Projekt weitergeleitet. Projekt Karten mit * funktionieren
+          nicht.
+        </p>
+      </div>
+
+      <!-- Hauptbereich mit Projekt-Karussell -->
       <div class="content-box">
         <section id="projekte">
           <h2>Projekte (auch Work in Progress)</h2>
@@ -80,50 +90,58 @@
             <button class="carousel-btn left">◀</button>
             <div class="carousel-viewport">
               <div class="carousel-ring">
-                <div class="project-card">
+                <a href="#" class="project-card">
                   <div class="icon">🛠️</div>
-                  <h3>Bestellungen per Excel Liste</h3>
+                  <h3>Bestellungen per Excel Liste*</h3>
                   <p>JS · API · Automatisierung</p>
-                </div>
-                <div class="project-card">
+                </a>
+
+                <a href="#" class="project-card">
                   <div class="icon">🛠️</div>
-                  <h3>Vorbereitung Carrier Preislisten</h3>
+                  <h3>Vorbereitung Carrier Preislisten*</h3>
                   <p>JS · Automatisierung</p>
-                </div>
-                <div class="project-card">
+                </a>
+
+                <a href="#" class="project-card">
                   <div class="icon">🌐</div>
-                  <h3>
-                    Bewerbungsseite <br />
-                    (work in Progress)
-                  </h3>
+                  <h3>Bewerbungsseite<br />(work in Progress)</h3>
                   <p>HTML · CSS · Responsive</p>
-                </div>
-                <div class="project-card">
+                </a>
+
+                <a
+                  href="https://lukasg-dev.github.io/restaurant/"
+                  class="project-card"
+                >
                   <div class="icon">🍽️</div>
-                  <h3>
-                    Restaurant & Reservirung <br />
-                    (work in Progress)
-                  </h3>
+                  <h3>Restaurant & Reservierung<br />(work in Progress)</h3>
                   <p>Fullstack · .NET · DB</p>
-                </div>
-                <div class="project-card">
+                </a>
+
+                <a href="#" class="project-card">
                   <div class="icon">🍽️</div>
-                  <h3>
-                    Notenrechner <br />
-                    (work in Progress)
-                  </h3>
+                  <h3>Notenrechner*<br />(work in Progress)</h3>
                   <p>JavaScript</p>
-                </div>
-                <div class="project-card">
+                </a>
+
+                <a
+                  href="https://lukasg-dev.github.io/DoungenMasterHelp/"
+                  class="project-card"
+                  target="_blank"
+                >
                   <div class="icon">🐉</div>
                   <h3>D&D Website</h3>
                   <p>DM-Tool · UI · JSON</p>
-                </div>
-                <div class="project-card">
+                </a>
+
+                <a
+                  href="Projekte/Raketenspiel/indexRaketenspiel.html"
+                  class="project-card"
+                  target="_blank"
+                >
                   <div class="icon">🚀</div>
                   <h3>Raketen Spiel</h3>
-                  <p>DM-Tool · UI · JSON</p>
-                </div>
+                  <p>JavaScript · Canvas</p>
+                </a>
               </div>
             </div>
             <button class="carousel-btn right">▶</button>
@@ -131,6 +149,7 @@
         </section>
       </div>
 
+      <!-- Rechter Platzhalter wird nicht mehr benötigt, kann entfernt oder anders verwendet werden -->
       <div class="placeholder pl-4-R"></div>
 
       <!-- Zeile 5 -->

@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 60px; /* oder was du brauchst */
-  background-color: #1f83b1;
+  background-color: #0f172a;
   color: white;
   z-index: 1000; /* damit sie über anderen Elementen bleibt */
   display: flex;
@@ -31,7 +31,7 @@
 #toggle-darkmode {
   display: inline-block;
   padding: 10px 16px;
-  color: #0a3a5f;
+  color: #38bdf8;
   text-decoration: none;
   font-weight: 500;
   border-radius: 6px;

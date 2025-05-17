@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine Dokumente</title>
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  
+        margin: 4rem 2rem 2rem 2rem; /* oben mehr Abstand */
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #222;
+      }
+
+      body.dark h1 {
+        color: white;
+      }
+
+      .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      select {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: background-color 0.2s ease-in-out;
+      }
+
+/* Farbe bei Auswahl dynamisch mit Klassen */
+select.work {
+  background-color: #fff4e6; /* orange */
+}
+select.school {
+  background-color: #e6fff2; /* grün */
+}
+select.cert {
+  background-color: #e6f0ff; /* blau */
+}
+
+
+      select:hover,
+      select:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+
+      .open-btn {
+        text-decoration: none;
+      }
+
+      .open-btn button {
+        padding: 0.6rem 1.2rem;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out,
+          transform 0.1s ease-in-out;
+      }
+
+      .open-btn button:hover {
+        background-color: #0056b3;
+        transform: translateY(-1px);
+      }
+
+      iframe {
+        display: none;
+        width: 100%;
+        height: 90vh;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <script src="/logic.js" defer></script>
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+
+    <h1>Meine Dokumente</h1>
+
+<select id="docSelect" onchange="loadPDF()">
+  <option value="">📄 Dokument auswählen</option>
+
+  <optgroup label="💼 Arbeitszeugnisse">
+    <option value="Arbeitszeugnis_MainSicherheit.pdf" data-type="work">MainSicherheit</option>
+    <option value="Arbeitszeugnis_CatInTheDiceBag,_Grebner_Lukas.pdf" data-type="work">CatInTheDiceBag</option>
+  </optgroup>
+
+  <optgroup label="🏫 Schulische Zeugnisse">
+    <option value="Abschlusszeugnis.pdf" data-type="school">Abschlusszeugnis</option>
+    <option value="Zwischenzeugnis.pdf" data-type="school">Zwischenzeugnis</option>
+    <option value="IHK_Zwischenprüfung.pdf" data-type="school">IHK Zwischenprüfung</option>
+  </optgroup>
+
+  <optgroup label="🧾 Zertifikate">
+    <option value="JavaScript_Zertifikat.pdf" data-type="cert">JavaScript</option>
+    <option value="Urkunde_Textverarbeitung_2015.pdf" data-type="cert">Textverarbeitung 2015</option>
+    <option value="Zertifikat_Kommunikation.pdf" data-type="cert">Kommunikation</option>
+    <option value="Zertifikat_Einstieg_IT-Sicherheit.pdf" data-type="cert">IT-Sicherheit</option>
+  </optgroup>
+</select>
+
+
+      <a id="openExternal" href="#" target="_blank" class="open-btn">
+        <button>🔗 In neuem Tab öffnen</button>
+      </a>
+    </div>
+
+    <iframe id="viewer-container"></iframe>
+  </body>
+</html>

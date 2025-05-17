@@ -7,8 +7,8 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #bfcadd;
-  color: #1a1a1a;
+  background-color: #a2b1cc;
+  color: #0a3a5f;
   line-height: 1.6;
 }
 
@@ -16,6 +16,7 @@ main {
   margin-top: 60px; /* identisch zur Navbar-Höhe */
 }
 h2 {
+  text-align: center;
   font-size: 2rem;
   color: #0a3a5f;
   margin-bottom: 20px;
@@ -23,6 +24,7 @@ h2 {
 
 p,
 li {
+  text-align: center;
   font-size: 1rem;
   margin-bottom: 12px;
 }
@@ -62,12 +64,14 @@ a:hover {
   padding: 20px;
 }
 
+/*
 .content-box {
   background-color: rgba(255, 255, 255, 0.144);
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+  */
 
 /* === Hero-Bereich === */
 .hero-content {
@@ -120,7 +124,7 @@ a:hover {
 }
 
 .highlight-list li::before {
-  content: "✔️";
+  content: "";
   position: absolute;
   left: 0;
 }
@@ -135,4 +139,27 @@ a:hover {
   margin-bottom: 10px;
   padding-left: 1em;
   position: relative;
+}
+
+.projekt-button {
+  display: block;
+  padding: 10px 16px;
+  margin: 6px 0;
+  background-color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.projekt-button:hover {
+  background-color: #34495e;
+}
+
+@media (max-width: 600px) {
+  .projekt-button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
 }

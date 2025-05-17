@@ -8,12 +8,14 @@
   font-size: 0.9rem;
   font-weight: bold;
   color: #0a3a5f;
-  border: 1px dashed rgba(10, 58, 95, 0.3);
-  background-color: rgba(10, 58, 95, 0.05);
+  /*border: 1px dashed rgba(10, 58, 95, 0.3);*/
+  /*background-color: rgba(10, 58, 95, 0.05);*/
   background-color: transparent;
 }
 
 /* === Farbliche Unterscheidung pro Platzhalter === */
+
+/*
 .pl-1-L {
   background-color: #e3f2fd;
 }
