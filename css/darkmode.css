@@ -60,3 +60,7 @@ body.dark .dropdown-content {
 body.dark .dropdown-content a:hover {
   background-color: #334155;
 }
+
+body.dark p {
+  color: white;
+}
