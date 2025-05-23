@@ -1,19 +1,105 @@
-/* Responsives Verhalten */
+/* === Responsives Verhalten für Tablets (bis 1024px) === */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .carousel-wrapper,
+  .carousel-viewport {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .carousel-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .project-card {
+    width: 90%;
+    height: auto;
+    position: static;
+    margin: 10px auto;
+    transform: none !important;
+  }
+
+  .btn-primary {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.05rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .content-box {
+    padding: 16px;
+    width: 100%;
+  }
+
+  .typed-text {
+    font-size: 1rem;
+  }
+}
+
+/* === Responsives Verhalten für Mobilgeräte (bis 768px) === */
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
   }
 
   .placeholder {
     display: none;
   }
 
-  .content-box {
-    width: 100%;
-    padding: 16px;
+  .carousel-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
   }
 
   .btn-primary {
-    display: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    display: block;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  li {
+    font-size: 0.9rem;
+  }
+
+  .typed-text {
+    font-size: 0.9rem;
+    border-right: 1px solid #000;
   }
 }
