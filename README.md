@@ -19,9 +19,9 @@ Anschließend `http://localhost:8000` öffnen. Zum Beenden im Terminal `Strg+C` 
 - `skills.html`: Kompetenzen, Berufserfahrung und Unterlagen.
 - `study.html`: Studium, Modulübersicht und separate OpenLearn-Weiterbildung.
 - `about.html`: Persönlicher Hintergrund.
-- `contact.html`: Direkte Kontaktwege und E-Mail-Vorbereitung.
+- `contact.html`: Direkte Kontaktwege per E-Mail und LinkedIn.
 - `css/style.css`: Gemeinsame Gestaltung und responsive Layouts.
-- `js/main.js`: Navigation, Modulfilter, Kopierfunktion und E-Mail-Vorbereitung.
+- `js/main.js`: Navigation, Modulfilter und Kopierfunktion für die E-Mail-Adresse.
 
 ### Module aktualisieren
 
@@ -35,6 +35,6 @@ In `study.html` stehen die Module als `<article class="module-card">`. Zum Ergä
 
 Modulinhalte sind anhand der jeweils verlinkten offiziellen OU-Modulbeschreibungen zusammengefasst. Persönliche Studienangaben stammen vom Website-Inhaber; Berufserfahrung und Studiengang aus dem bereitgestellten Lebenslauf. Der OpenLearn-Kurs ist kein anrechenbares Studienmodul.
 
-### Kontaktformular
+### Kontakt
 
-Das Formular öffnet über `mailto:` das E-Mail-Programm mit vorausgefülltem Betreff und Nachricht. Der Besucher muss die Nachricht dort selbst versenden. Es gibt keinen Serverversand und keine Speicherung von Formulareingaben. Direkte E-Mail-Links funktionieren auch ohne JavaScript; Module und Navigation bleiben ebenfalls zugänglich.
+Die Kontaktseite zeigt die E-Mail-Adresse mit einer Kopierfunktion und einen LinkedIn-Link. Ein Klick auf die E-Mail-Adresse öffnet über `mailto:` das E-Mail-Programm. Es gibt kein Kontaktformular und keine Vorlagen- oder Versandautomatik. Direkte Kontaktlinks funktionieren auch ohne JavaScript; Module und Navigation bleiben ebenfalls zugänglich.

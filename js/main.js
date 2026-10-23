@@ -42,16 +42,6 @@
     }
   });
 
-  document.querySelector("[data-mail]")?.addEventListener("submit", event => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const data = new FormData(form);
-    const subject = encodeURIComponent(String(data.get("subject")).trim());
-    const body = encodeURIComponent("Hallo Lukas,\n\n" + String(data.get("message")).trim() + "\n\nViele Grüße\n" + String(data.get("name")).trim() + "\n" + String(data.get("email")).trim());
-    document.querySelector("[data-mail-status]").textContent = "Die E-Mail wird an Ihr E-Mail-Programm übergeben. Falls sich nichts öffnet, nutzen Sie bitte den direkten E-Mail-Link.";
-    window.location.href = "mailto:grebner1998@gmail.com?subject=" + subject + "&body=" + body;
-  });
-
   const filterToolbar = document.querySelector("[data-module-filters]");
   if (filterToolbar) {
     const cards = [...document.querySelectorAll(".module-card")];
